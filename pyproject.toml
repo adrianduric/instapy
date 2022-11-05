@@ -1,0 +1,21 @@
+[build-system]
+requires = [
+    "setuptools"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "instapy"
+description = "Image filtering software package"
+readme = "README.md"
+version = "0.1.0"
+requires-python = ">=3.7"
+license = {text = "MIT License"}
+dependencies = [
+    "numpy==1.21.5",
+    "numba==0.55.1",
+    "Pillow==9.0.0"
+]
+
+[project.scripts]
+instapy = "instapy.cli:main"
